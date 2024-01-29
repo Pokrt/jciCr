@@ -33,7 +33,7 @@
           </li><li>
             <router-link @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" to="/#partners">Partners</router-link>
           </li>  --><li>
-            <a href="#contact"   @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" >Contact</a>
+            <a href="#organizations"   @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" >Organizations</a>
           </li>
         </ul>
       </details>
@@ -67,7 +67,7 @@
         </li>    <li>
           <router-link class="text-xl" to="/#partners">Partners</router-link>
         </li>       -->  <li>
-          <a href="#contact" @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" >Contact</a>
+          <a href="#organizations" @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)" >Organizations</a>
         </li>
       </ul>
     </div>
