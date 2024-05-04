@@ -2,7 +2,7 @@
   <Navbar />
   <div class="hero min-h-screen" style="background-image: url(/5T0A8211.jpg);">
     <div class="hero-overlay bg-base-100 bg-opacity-70"></div>
-    <div class="hero-content text-center text-neutral-content flexv h-full">
+    <div class="hero-content text-center text-neutral-content flex h-full">
 
       <div class="max-w-md flex self-end ">
         <div class=" flex self-end">
