@@ -24,7 +24,7 @@
       <span>Junior Chamber International</span>
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/home">
+      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/">
         Home
       </a>
       <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/projects">
