@@ -1,42 +1,21 @@
-<script setup>
-
-</script>
-
 <template>
 
-  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center ">
+  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-primary ">
     <div class="container px-4 md:px-6">
       <div class="grid  items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
         <div class="flex flex-col justify-center space-y-4">
           <div class="space-y-2">
-            <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-              Junior Chamber International
-            </div>
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 class=" text-3xl font-bold text-base-100 tracking-tighter sm:text-5xl">
               Developing Leaders for a changing world
             </h2>
-            <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p class="font-helveticaneue max-w-[600px] text-base-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               Junior Chamber International je globální leadershipová organizace, jejíž tradice sahá až do roku 1917.
               Dnes máme přes 150 000 aktivních členů ve více než 120 zemích světa!
             </p>
           </div>
-          <!--        <div class="flex flex-col gap-2 min-[400px]:flex-row">-->
-          <!--          <a-->
-          <!--            class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"-->
-          <!--            href="#"-->
-          <!--          >-->
-          <!--            Join Now-->
-          <!--          </a>-->
-          <!--          <a-->
-          <!--            class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"-->
-          <!--            href="#"-->
-          <!--          >-->
-          <!--            Learn More-->
-          <!--          </a>-->
-          <!--        </div>-->
         </div>
         <img
-            src="/placeholder.svg"
+            src="/pavel.jpg"
             width="550"
             height="310"
             alt="Junior Chamber International"
@@ -45,11 +24,11 @@
       </div>
     </div>
   </section>
-  <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 grid place-items-center">
+  <section class="w-full py-12 md:py-24 lg:py-32 bg-base-100 grid place-items-center">
     <div class="container px-4 md:px-6">
       <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
         <img
-            src="/placeholder.svg"
+            src="/pika.jpg"
             width="550"
             height="310"
             alt="Community Involvement"
@@ -57,22 +36,19 @@
         />
         <div class="flex flex-col justify-center space-y-4">
           <div class="space-y-2">
-<!--            <div class="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">-->
-<!--              Community Involvement-->
-<!--            </div>-->
-            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 class="text-3xl text-primary font-bold  sm:text-5xl">
               Cíl
             </h2>
-            <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p class="max-w-[600px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               Našim cílem je být hybatelem změn ve společnosti a proto začínáme sami u sebe. Aktivně rozvíjíme své
               dovednosti vést sebe, druhé a pracovat v týmu, vyhledávat nové výzvy a nacházet řešení k aktuálním
               problémům v našich komunitách.
               Našim cílem je dosáhnout pozitivních změn ve společnosti propojením veřejného, neziskového a
               podnikatelského prostředí.</p>
-            <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p class="max-w-[600px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               Mezi našimi členy jsou profesionálové z nejrůznějších oborů, podnikatelé, manažeři i studenti, úředníci a
               učitelé. </p>
-            <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p class="max-w-[600px] text-white  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               Společně tvoříme silnou skupinu mladých lidí, kteří se zajímají o aktivity ve svých lokálních komunitách,
               sdílejí své zkušenosti i znalosti a pomáhají tvořit lepší svět.
 
@@ -80,72 +56,53 @@
           </div>
           <div class="flex flex-col gap-2 min-[400px]:flex-row">
             <a
-                class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                href="#"
-            >
+                class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
+                href="#">
               Více o členství
             </a>
-<!--            <a-->
-<!--                class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"-->
-<!--                href="#"-->
-<!--            >-->
-<!--              Explore Projects-->
-<!--            </a>-->
+            <a
+                class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
+                href="#"
+            >
+              Objev projekty
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center">
+  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-neutral">
     <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
       <div class="space-y-3">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Meet Our Members</h2>
-        <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          Junior Chamber International is a diverse community of professionals, entrepreneurs, students, and community
-          leaders who are passionate about making a positive impact.
+        <h2 class="text-3xl text-base-100 font-bold tracking-tighter sm:text-4xl md:text-5xl">Seznamte se s našimi členy</h2>
+        <p class="mx-auto max-w-[700px] text-base-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
+          Junior Chamber International je různorodá komunita profesionálů, podnikatelů, studentů a komunitních lídrů,
+          kteří jsou zapálení pro pozitivní dopad.
         </p>
       </div>
       <div
-          class="grid w-full grid-cols-2 lg:grid-cols-5 items-center justify-center gap-8 lg:gap-12 [&amp;>img]:mx-auto">
+          class="grid w-full grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8 lg:gap-12 [&amp;>img]:mx-auto">
         <img
-            src="/placeholder.svg"
-            width="140"
-            height="70"
+            src="/epm.jpg"
+            width="300"
             alt="Member Logo"
-            class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-        />
-        <img
-            src="/placeholder.svg"
-            width="140"
-            height="70"
+            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
+        />  <img
+            src="/czeko.jpg"
+            width="300"
             alt="Member Logo"
-            class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-        />
-        <img
-            src="/placeholder.svg"
-            width="140"
-            height="70"
+            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
+        />  <img
+            src="/kotel.jpg"
+            width="300"
             alt="Member Logo"
-            class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
         />
-        <img
-            src="/placeholder.svg"
-            width="140"
-            height="70"
-            alt="Member Logo"
-            class="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-        />
-        <img
-            src="/placeholder.svg"
-            width="140"
-            height="70"
-            alt="Member Logo"
-            class="aspect-[2/1] col-span-2 lg:col-span-1 overflow-hidden rounded-lg object-contain object-center"
-        />
+
       </div>
     </div>
   </section>
-  <section class="w-full py-12 md:py-24 lg:py-32 border-t grid place-items-center">
+  <section class="w-full py-12 md:py-24 lg:py-32  grid place-items-center">
     <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
       <div class="space-y-3">
         <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">Join the Movement</h2>
@@ -191,3 +148,5 @@
     </nav>
   </footer>
 </template>
+<script setup lang="ts">
+</script>

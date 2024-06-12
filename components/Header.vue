@@ -4,7 +4,7 @@
 </script>
 
 <template>
-<header class="w-full bg-gray-100 dark:bg-gray-800 py-4 border-b border-gray-200 dark:border-gray-700 grid place-items-center">
+<header class="w-full bg-gray-100 dark:bg-base-100 py-4 border-b border-gray-200 dark:border-gray-700 grid place-items-center">
   <div class="container px-4 md:px-6 flex items-center justify-between">
     <a class="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-50" href="#">
       <svg
@@ -24,30 +24,30 @@
       <span>Junior Chamber International</span>
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/">
+      <NuxtLink class="text-gray-700 hover:text-gray-900  " to="/">
         Home
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/projects">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/projects">
         Projekty
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/events">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/events">
         Akce
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/mentioned">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/mentioned">
         Napsali o nás
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/people">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/people">
         Lidé
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/branches">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/branches">
         Pobočky
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50 btn-disabled" href="#">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900  btn-disabled" to="#">
         Kontakty
-      </a>
-      <a class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50" href="/membership">
+      </NuxtLink>
+      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/membership">
         Členství
-      </a>
+      </NuxtLink>
     </nav>
     <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
       <svg
