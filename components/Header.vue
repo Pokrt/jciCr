@@ -7,45 +7,35 @@
 <header class="w-full bg-gray-100 dark:bg-base-100 py-4 border-b border-gray-200 dark:border-gray-700 grid place-items-center">
   <div class="container px-4 md:px-6 flex items-center justify-between">
     <a class="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-50" href="#">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="h-6 w-6"
-      >
-        <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
-      </svg>
-      <span>Junior Chamber International</span>
+      <img
+       src="/logo_white.svg"
+        class="h-12 w-12"
+       alt="JCI Czech Reoublic Logo"/>
+      <span>JCI Czech Republic</span>
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-      <NuxtLink class="text-gray-700 hover:text-gray-900  " to="/">
+      <NuxtLink class="text-white hover:text-neutral  " to="/">
         Home
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/projects">
+      <NuxtLink class="text-white hover:text-neutral " to="/projects">
         Projekty
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/events">
+      <NuxtLink class="text-white hover:text-neutral " to="/events">
         Akce
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/mentioned">
+      <NuxtLink class="text-white hover:text-neutral " to="/mentioned">
         Napsali o nás
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/people">
+      <NuxtLink class="text-white hover:text-neutral " to="/people">
         Lidé
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/branches">
+      <NuxtLink class="text-white hover:text-neutral " to="/branches">
         Pobočky
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900  btn-disabled" to="#">
+      <NuxtLink class="text-white hover:text-neutral  btn-disabled" to="#">
         Kontakty
       </NuxtLink>
-      <NuxtLink class="text-gray-700 hover:text-gray-900 " to="/membership">
+      <NuxtLink class="text-white hover:text-neutral " to="/membership">
         Členství
       </NuxtLink>
     </nav>

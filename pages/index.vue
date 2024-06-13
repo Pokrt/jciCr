@@ -45,21 +45,8 @@
               problémům v našich komunitách.
               Našim cílem je dosáhnout pozitivních změn ve společnosti propojením veřejného, neziskového a
               podnikatelského prostředí.</p>
-            <p class="max-w-[600px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
-              Mezi našimi členy jsou profesionálové z nejrůznějších oborů, podnikatelé, manažeři i studenti, úředníci a
-              učitelé. </p>
-            <p class="max-w-[600px] text-white  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
-              Společně tvoříme silnou skupinu mladých lidí, kteří se zajímají o aktivity ve svých lokálních komunitách,
-              sdílejí své zkušenosti i znalosti a pomáhají tvořit lepší svět.
-
-            </p>
           </div>
           <div class="flex flex-col gap-2 min-[400px]:flex-row">
-            <a
-                class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
-                href="#">
-              Více o členství
-            </a>
             <a
                 class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
                 href="#"
@@ -74,32 +61,22 @@
   <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-neutral">
     <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
       <div class="space-y-3">
-        <h2 class="text-3xl text-base-100 font-bold tracking-tighter sm:text-4xl md:text-5xl">Seznamte se s našimi členy</h2>
+        <h2 class="text-3xl text-base-100 font-bold tracking-tighter sm:text-4xl md:text-5xl">Seznamte se s našimi
+          členy</h2>
         <p class="mx-auto max-w-[700px] text-base-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
           Junior Chamber International je různorodá komunita profesionálů, podnikatelů, studentů a komunitních lídrů,
-          kteří jsou zapálení pro pozitivní dopad.
+          kteří jsou zapálení pro pozitivní dopad. Společně tvoříme silnou skupinu mladých lidí, kteří se zajímají o aktivity ve svých lokálních komunitách,
+          sdílejí své zkušenosti i znalosti a pomáhají tvořit lepší svět.
         </p>
       </div>
-      <div
-          class="grid w-full grid-cols-1 lg:grid-cols-3 items-center justify-center gap-8 lg:gap-12 [&amp;>img]:mx-auto">
-        <img
-            src="/epm.jpg"
-            width="300"
-            alt="Member Logo"
-            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
-        />  <img
-            src="/czeko.jpg"
-            width="300"
-            alt="Member Logo"
-            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
-        />  <img
-            src="/kotel.jpg"
-            width="300"
-            alt="Member Logo"
-            class="mx-auto  overflow-hidden rounded-xl object-cover object-center"
-        />
-
+      <div class=" ">
+        <a
+            class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
+            href="#">
+          Více o členství
+        </a>
       </div>
+      <galery/>
     </div>
   </section>
   <section class="w-full py-12 md:py-24 lg:py-32  grid place-items-center">
