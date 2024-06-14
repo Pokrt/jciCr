@@ -47,12 +47,12 @@
               podnikatelského prostředí.</p>
           </div>
           <div class="flex flex-col gap-2 min-[400px]:flex-row">
-            <a
+            <NuxtLink
                 class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
-                href="#"
+                to="/projects"
             >
               Objev projekty
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -71,11 +71,11 @@
         </p>
       </div>
       <div class=" ">
-        <a
+        <NuxtLink
             class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
-            href="#">
+            to="/membership">
           Více o členství
-        </a>
+        </NuxtLink>
       </div>
       <galery/>
     </div>
@@ -148,20 +148,7 @@
       </div>
     </div>
   </section>
-  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-    <p class="text-xs text-gray-500 dark:text-gray-400">© 2024 Junior Chamber International. All rights reserved.</p>
-    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-      <a class="text-xs hover:underline underline-offset-4" href="#">
-        About
-      </a>
-      <a class="text-xs hover:underline underline-offset-4" href="#">
-        Get Involved
-      </a>
-      <a class="text-xs hover:underline underline-offset-4" href="#">
-        Contact
-      </a>
-    </nav>
-  </footer>
 </template>
 <script setup lang="ts">
+import Footer from "~/components/Footer.vue";
 </script>
