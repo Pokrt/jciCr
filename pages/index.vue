@@ -95,7 +95,7 @@
             <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
               Poskytujeme příležitosti mladým lidem, kteří chtějí měnit svět k lepšímu.
             </h2>
-            <p class="text-gray-500 dark:text-gray-400 max-w-[600px]">
+            <p class="  max-w-[600px]">
               Naším cílem je podporovat a rozvíjet mladé lidi, kteří mají vizi a touhu zlepšit svět kolem sebe. Nabízíme
               jim vzdělávací programy, mentoring a příležitosti k realizaci jejich nápadů a projektů.
             </p>
@@ -106,7 +106,7 @@
               Vize
             </div>
             <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">Být přední organizací mladých lídrů.</h2>
-            <p class="text-gray-500 dark:text-gray-400 max-w-[600px]">
+            <p class=" max-w-[600px]">
               Chceme se stát vedoucí organizací, která inspiruje a podporuje mladé lidi v jejich snaze o pozitivní
               změnu. Budujeme silnou komunitu, která se navzájem motivuje a pomáhá realizovat smysluplné projekty.
             </p>
