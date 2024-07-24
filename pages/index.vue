@@ -82,7 +82,7 @@
   </section>
 
 
-  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-base-100">
+  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-base-100 text-white">
 
     <div class=" py-12 md:py-24">
       <div class="container mx-auto px-4 md:px-6">
@@ -92,7 +92,7 @@
                 class=" inline-block rounded-lg bg-neutral px-3 py-1 text-sm font-medium text-base-100">
               Mise
             </div>
-            <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
+            <h2 class="text-3xl font-bold tracking-tighter md:text-4xl ">
               Poskytujeme příležitosti mladým lidem, kteří chtějí měnit svět k lepšímu.
             </h2>
             <p class="  max-w-[600px]">

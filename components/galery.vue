@@ -5,7 +5,7 @@
         src="/epm.jpg"
         width="300"
         alt="Member Logo"
-        class="mx-auto  overflow-hidden rounded-xl object-cover object-center hidden xl:block"
+        class="mx-auto  overflow-hidden rounded-xl object-cover object-center hidden xl:block "
     /> <img
       src="/czeko.jpg"
       width="300"
@@ -19,7 +19,7 @@
   />
 
     <div class="carousel w-full xl:hidden">
-      <div id="slide1" class="carousel-item relative w-full">
+      <div id="slide1" class="carousel-item relative w-full pt-10 lg:pt-0">
         <img
             src="/epm.jpg"
             width="300"
@@ -31,7 +31,7 @@
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div id="slide2" class="carousel-item relative w-full">
+      <div id="slide2" class="carousel-item relative w-full pt-10 lg:pt-0">
         <img
             src="/czeko.jpg"
             width="300"
@@ -43,7 +43,7 @@
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
       </div>
-      <div id="slide3" class="carousel-item relative w-full">
+      <div id="slide3" class="carousel-item relative w-full pt-10 lg:pt-0">
         <img
             src="/kotel.jpg"
             width="300"

@@ -2,12 +2,12 @@
 
 <template>
 
-  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center">
+  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center text-white">
     <div class="container grid gap-6 md:gap-8 px-4 md:px-6">
       <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
         <div class="grid gap-1">
           <h1 class="text-2xl font-bold tracking-tight">Projekty členů JCI pro svět v praxi</h1>
-          <p class="text-gray-500 dark:text-gray-400">Podívejte se na naše aktuální projekty a zapojte se.</p>
+          <p class="">Podívejte se na naše aktuální projekty a zapojte se.</p>
         </div>
       </div>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -88,12 +88,12 @@
               chtějí podnikat nebo získat inspiraci a nové kontakty.
             </p>
           </div>
-          <a
+          <NuxtLink
               class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
-              href="#"
+              to="https://www.businesskotel.cz/"
           >
             Více informací &amp; termíny akcí
-          </a>
+          </NuxtLink>
           <img
               src="/pbk.jpg"
               alt="Bussiness kotel"
@@ -116,12 +116,12 @@
               děti určitého věku a pohlaví a děti následně nalezly pod stromečkem to, co si přejí.
             </p>
           </div>
-          <a
+          <NuxtLink
               class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"
-              href="#"
+              to="https://krabice.jcicr.cz/"
           >
             Více informací
-          </a>
+          </NuxtLink>
           <div class="grid grid-cols-2 gap-4">
             <img
                 src="/krabice_3.jpg"
@@ -156,9 +156,9 @@
               networkingu, školení i kulturního programu. Akci tradičně navštěvují mladí leadeři z okolních států.
             </p>
           </div>
-          <a class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral" href="https://www.jci-czeko.cz/">
+          <NuxtLink class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral" to="https://www.jci-czeko.cz/">
             Více informací
-          </a>
+          </NuxtLink>
           <img src="/czeko-2.jpg" alt="Setkání (budoucích) leaderů" width="450" height="300"
                class="rounded-lg object-cover" style="aspect-ratio:450/300;object-fit:cover"/>
         </div>
