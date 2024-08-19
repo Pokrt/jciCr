@@ -11,7 +11,7 @@
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
         <NuxtLink class="text-white hover:text-neutral  " to="/">
-          Home
+          Domů
         </NuxtLink>
         <NuxtLink class="text-white hover:text-neutral " to="/projects">
           Projekty
@@ -55,7 +55,7 @@
           </summary>
           <ul class="menu menu-sm dropdown-content mt-3 z-20 p-2 shadow bg-base-100 rounded-box w-52 ">
             <li>
-              <NuxtLink to="/" @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)">Home
+              <NuxtLink to="/" @click="subNavbarHide($event.target.parentElement.parentElement.parentElement)">Domů
               </NuxtLink>
             </li>
             <li>
