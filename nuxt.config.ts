@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             htmlAttrs: {
-                lang: 'cz'
+                lang: 'cs'
             }
         }
     }
