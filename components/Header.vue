@@ -1,15 +1,15 @@
 <template>
   <header
-      class="w-full bg-gray-100 dark:bg-base-100 py-4 border-b border-gray-200 dark:border-gray-700 grid place-items-center">
+      class="w-full bg-base-100 py-4 border-b border-gray-200  grid place-items-center">
     <div class="container px-4 md:px-6 flex items-center justify-between">
       <a class="flex items-center gap-2 font-semibold " href="">
         <img
             src="/logo_white.svg"
             class="h-12 w-12"
             alt="JCI Czech Reoublic Logo"/>
-        <span>JCI Czech Republic</span>
+        <span class="text-white text-base ">JCI Czech Republic</span>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <nav class="hidden md:flex items-center gap-6 text-base font-medium">
         <NuxtLink class="text-white hover:text-neutral  " to="/">
           Domů
         </NuxtLink>
@@ -28,7 +28,7 @@
         <NuxtLink class="text-white hover:text-neutral " to="/branches">
           Pobočky & Kontakty
         </NuxtLink>
-        <NuxtLink class="text-white hover:text-neutral " to="/membership">
+        <NuxtLink class="  btn btn-neutral  " to="/membership">
           Členství
         </NuxtLink>
       </nav>

@@ -3,7 +3,7 @@
     <section class="flex flex-col items-center justify-center h-screen bg-primary text-base-100  ">
       <div class="max-w-md w-full space-y-4 px-4">
         <h1 class="text-3xl font-bold ">
-          Akce - Příležitosti na učení se leadershipu v praxi
+          Akce - Akce, na kterých dostanete leadership pod kůži. Na lokální i globální úrovni.
         </h1>
         <NuxtLink
             class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral"

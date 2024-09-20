@@ -63,7 +63,6 @@
         Senátoři
       </h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
         <div v-for="president in senators" class=" rounded-lg shadow-sm overflow-hidden bg-primary text-base-100">
           <div class="p-6 space-y-4">
             <div class="flex items-center space-x-4">
@@ -173,6 +172,16 @@ export default {
           name: "Votěch Kačírek",
           linkedin: "https://www.linkedin.com/in/vojtech-kacirek-2b07983/",
           photo: "/vojtech.jpg"
+        },
+        {
+          name: "Leoš Kubíček",
+          linkedin: "https://www.linkedin.com/in/leos-kubicek-80167430/",
+          photo: "/leos.jpg"
+        },
+        {
+          name: "Blanka Bendlová",
+          linkedin: "https://www.linkedin.com/in/blankabendlova/",
+          photo: "/blanka.jpg"
         }
       ]
 

@@ -17,7 +17,7 @@
             {{ article.summary }}
           </p>
           <NuxtLink
-              class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral mt-4"
+              class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral mt-4 self-end "
               :to="article.link"
           >
             Celý článek

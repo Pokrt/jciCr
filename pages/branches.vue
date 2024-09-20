@@ -4,7 +4,7 @@
       <div class="space-y-4">
         <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Naše pobočky</h2>
         <p class="">
-          Podívejte se na naše stávající pobočky a zjistěte, jak se můžete zapojit.
+          Kde nás aktuálně najdete? Neváhejte se s námi spojit.
         </p>
       </div>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
