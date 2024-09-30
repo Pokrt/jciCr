@@ -2,8 +2,8 @@
   <section class="w-full py-12 md:py-24 lg:py-32 bg-primary  grid place-items-center text-base-100">
 
     <div class="container px-4 md:px-6">
-      <div class="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
-        <div class="space-y-4 col-span-2">
+      <div class="grid gap-10 sm:px-10 md:gap-16 grid-cols-1 lg:grid-cols-2">
+        <div class="space-y-4 grid-span-1 lg:col-span-2">
           <h2 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
             Projekty členů JCI mají dopad!
           </h2>
