@@ -169,7 +169,7 @@ export default {
         }
         ,
         {
-          name: "Votěch Kačírek",
+          name: "Vojtěch Kačírek",
           linkedin: "https://www.linkedin.com/in/vojtech-kacirek-2b07983/",
           photo: "/vojtech.jpg"
         },
@@ -182,6 +182,14 @@ export default {
           name: "Blanka Bendlová",
           linkedin: "https://www.linkedin.com/in/blankabendlova/",
           photo: "/blanka.jpg"
+        } ,{
+          name: "Jan Plojhar",
+          linkedin: "https://www.linkedin.com/in/janplojhar/",
+          photo: "/playhard.jpg"
+        }, {
+          name: "Jana Daniela Šabatková",
+          linkedin: "https://www.linkedin.com/in/janadaniela/",
+          photo: "/jd.jpeg"
         }
       ]
 
