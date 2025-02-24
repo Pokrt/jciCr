@@ -127,10 +127,16 @@ export default {
           photo: "roman2.jpg",
           position: "Národní prezident"
         },
+        // {
+        //   name: "Anna Soukup",
+        //   linkedin: "https://www.linkedin.com/in/annasoukup/",
+        //   photo: "anna.jpg",
+        //   position: "Lokální prezident, Prague"
+        // },
         {
-          name: "Anna Soukup",
-          linkedin: "https://www.linkedin.com/in/annasoukup/",
-          photo: "anna.jpg",
+          name: "Blanka Mrázková",
+          linkedin: "https://www.linkedin.com/in/blankamrazkova/",
+          photo: "blanka_mrazkova.jpg",
           position: "Lokální prezident, Prague"
         },
         {
