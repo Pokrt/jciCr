@@ -50,6 +50,12 @@ export default {
     return {
       articles: [
         {
+          name: "Již 1. října v Českých Budějovicích proběhne byznysová konference BYZON",
+          link: "https://budejcka.drbna.cz/zpravy/spolecnost/43167-jiz-1-rijna-v-ceskych-budejovicich-probehne-byznysova-konference-byzon.html",
+          summary: "Díky spolupráci s JCI a Moderním Leaderem vznikla druhá scéna zaměřená na interaktivní workshopy s praktickými tipy. Konference nově nabídne i koučovací zónu, kde mohou návštěvníci konzultovat se zkušenými kouči a posunout své podnikání dál.",
+          image: "/articles/foto7.jpg"  // Placeholder image link
+        },
+        {
           name: "Pražský hrad hostil nadějnou mladou generaci z evropských zemí, za organizací velkolepé akce stojí lídři z pražského spolku JCI",
           link: "https://www.czechstartups.org/novinky/prazsky-hrad-hostil-nadejnou-mladou-generaci-z-evropskych-zemi-za-organizaci-velkolepe-akce-stoji-lidri-z-prazskeho-spolku-jci/",
           summary: "Pražský hrad hostil akci pro nadějnou mladou generaci z různých evropských zemí, organizovanou lídry z pražského spolku JCI.",
@@ -84,7 +90,7 @@ export default {
           link: "https://www.karp-kv.cz/aktualita/business-kotel-predstavil/27",
           summary: "Business kotel, iniciativa pro podporu začínajících podnikatelů, představil nové projekty a možnosti pro mladé podnikatele.",
           image: "/articles/foto6.jpg"  // Placeholder image link
-        }
+        },
       ],
     }
   },
