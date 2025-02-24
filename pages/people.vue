@@ -122,27 +122,27 @@ export default {
     return {
       presidents: [
         {
-          name: "Hana Křenková",
-          linkedin: "https://www.linkedin.com/in/hanakrenkova/",
-          photo: "/hanka.jpeg",
+          name: "Roman Jasenovec",
+          linkedin: "https://www.linkedin.com/in/romanjasenovec",
+          photo: "roman2.jpg",
           position: "Národní prezident"
         },
         {
-          name: "Zuzana Carbolová",
-          linkedin: "https://www.linkedin.com/in/zuzanacarbolova/",
-          photo: "/zuzana.jpg",
+          name: "Anna Soukup",
+          linkedin: "https://www.linkedin.com/in/annasoukup/",
+          photo: "anna.jpg",
           position: "Lokální prezident, Prague"
         },
         {
-          name: "Andrea Bílá",
-          linkedin: "https://www.linkedin.com/in/andrea-bila/",
-          photo: "andrejka.jpeg",
+          name: "Antonín Bábíček",
+          linkedin: "https://www.linkedin.com/in/anton%C3%ADn-b%C3%A1b%C3%AD%C4%8Dek-1b5b38233/",
+          photo: "tonda.jpg",
           position: "Lokální prezident, Plzeň"
         },
         {
-          name: "Jindřich Hrdý",
-          linkedin: "https://www.linkedin.com/in/jind%C5%99ichhrd%C3%BD/",
-          photo: "jindra.jpg",
+          name: "František Jíra",
+          linkedin: "https://www.linkedin.com/in/frantisek-jira/",
+          photo: "frantisek.jpg",
           position: "Lokální prezident, České Budějovice"
         }
       ],
