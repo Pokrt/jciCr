@@ -122,16 +122,16 @@ export default {
     return {
       presidents: [
         {
-          name: "Anna Soukup",
-          linkedin: "https://www.linkedin.com/in/annasoukup/",
-          photo: "anna.jpg",
-          position: "Lokální prezident, Prague"
-        },
-        {
           name: "Leonid Kushnir",
           linkedin: "https://www.linkedin.com/in/leonidkushnir/",
           photo: "leon.jpg",
           position: "Národní prezident"
+        },
+        {
+          name: "Anna Soukup",
+          linkedin: "https://www.linkedin.com/in/annasoukup/",
+          photo: "anna.jpg",
+          position: "Lokální prezident, Prague"
         },
         {
           name: "Štěpán Kapko",
