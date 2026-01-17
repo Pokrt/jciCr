@@ -4,9 +4,9 @@
     <div class="container px-4 md:px-6 flex items-center justify-between">
       <a class="flex items-center gap-2 font-semibold " href="">
         <img
-            src="/logo_white.svg"
+            src="/JCI - Czech Republic - WHITE.svg"
             class="h-12 w-12"
-            alt="JCI Czech Reoublic Logo"/>
+            alt="JCI Czech Republic Logo"/>
         <span class="text-white text-base ">JCI Czech Republic</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-base font-medium">

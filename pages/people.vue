@@ -122,33 +122,27 @@ export default {
     return {
       presidents: [
         {
-          name: "Roman Jasenovec",
-          linkedin: "https://www.linkedin.com/in/romanjasenovec",
-          photo: "roman2.jpg",
-          position: "Národní prezident"
-        },
-        // {
-        //   name: "Anna Soukup",
-        //   linkedin: "https://www.linkedin.com/in/annasoukup/",
-        //   photo: "anna.jpg",
-        //   position: "Lokální prezident, Prague"
-        // },
-        {
-          name: "Blanka Mrázková",
-          linkedin: "https://www.linkedin.com/in/blankamrazkova/",
-          photo: "blanka_mrazkova.jpg",
+          name: "Anna Soukup",
+          linkedin: "https://www.linkedin.com/in/annasoukup/",
+          photo: "anna.jpg",
           position: "Lokální prezident, Prague"
         },
         {
-          name: "Antonín Bábíček",
-          linkedin: "https://www.linkedin.com/in/anton%C3%ADn-b%C3%A1b%C3%AD%C4%8Dek-1b5b38233/",
-          photo: "tonda.jpg",
+          name: "Leonid Kushnir",
+          linkedin: "https://www.linkedin.com/in/leonidkushnir/",
+          photo: "leon.jpg",
+          position: "Národní prezident"
+        },
+        {
+          name: "Štěpán Kapko",
+          linkedin: "https://www.linkedin.com/in/stepankapko/",
+          photo: "stepan.jpg",
           position: "Lokální prezident, Plzeň"
         },
         {
-          name: "František Jíra",
-          linkedin: "https://www.linkedin.com/in/frantisek-jira/",
-          photo: "frantisek.jpg",
+          name: "Luboš Petráň",
+          linkedin: "https://www.linkedin.com/in/lubo%C5%A1-petr%C3%A1%C5%88-526b6327a/",
+          photo: "lubos.jpg",
           position: "Lokální prezident, České Budějovice"
         }
       ],
