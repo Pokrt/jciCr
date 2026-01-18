@@ -128,9 +128,9 @@ export default {
           position: "Národní prezident"
         },
         {
-          name: "Anna Soukup",
-          linkedin: "https://www.linkedin.com/in/annasoukup/",
-          photo: "anna.jpg",
+          name: "Frantisek Hanf",
+          linkedin: "https://www.linkedin.com/in/frantisekhanf/",
+          photo: "frantisek_hanf.jpg",
           position: "Lokální prezident, Prague"
         },
         {
