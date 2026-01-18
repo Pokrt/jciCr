@@ -127,87 +127,79 @@ useSeoMeta({
   twitterTitle: 'Vedení JCI Czech Republic',
   twitterDescription: 'Seznamte se s vedením JCI Czech Republic - národní prezident, lokální prezidenti a senátoři.',
 })
-</script>
 
-<script>
-export default {
-  data() {
-    return {
-      presidents: [
-        {
-          name: "Leonid Kushnir",
-          linkedin: "https://www.linkedin.com/in/leonidkushnir/",
-          photo: "leon.jpg",
-          position: "Národní prezident"
-        },
-        {
-          name: "Frantisek Hanf",
-          linkedin: "https://www.linkedin.com/in/frantisekhanf/",
-          photo: "frantisek_hanf.jpg",
-          position: "Lokální prezident, Prague"
-        },
-        {
-          name: "Štěpán Kapko",
-          linkedin: "https://www.linkedin.com/in/stepankapko/",
-          photo: "stepan.jpg",
-          position: "Lokální prezident, Plzeň"
-        },
-        {
-          name: "Luboš Petráň",
-          linkedin: "https://www.linkedin.com/in/lubo%C5%A1-petr%C3%A1%C5%88-526b6327a/",
-          photo: "lubos.jpg",
-          position: "Lokální prezident, České Budějovice"
-        }
-      ],
-      senators: [
-        {
-          name: "Václav Ševčík",
-          linkedin: "https://www.linkedin.com/in/vaclavsevcik/",
-          photo: "/vasek.jpg"
-        },
-        {
-          name: "Jana Havlíčková",
-          linkedin: "https://www.linkedin.com/in/janahavlickova/",
-          photo: "/jana.jpeg"
-        },
-        {
-          name: "Jiří Mauritz",
-          linkedin: "https://www.linkedin.com/in/jirimauritz/",
-          photo: "/jiri.jpg"
-        },
-        {
-          name: "Miroslav Rys",
-          linkedin: "https://www.linkedin.com/in/rysmiroslav/",
-          photo: "/mirek.jpg"
-        }
-        ,
-        {
-          name: "Vojtěch Kačírek",
-          linkedin: "https://www.linkedin.com/in/vojtech-kacirek-2b07983/",
-          photo: "/vojtech.jpg"
-        },
-        {
-          name: "Leoš Kubíček",
-          linkedin: "https://www.linkedin.com/in/leos-kubicek-80167430/",
-          photo: "/leos.jpg"
-        },
-        {
-          name: "Blanka Bendlová",
-          linkedin: "https://www.linkedin.com/in/blankabendlova/",
-          photo: "/blanka.jpg"
-        } ,{
-          name: "Jan Plojhar",
-          linkedin: "https://www.linkedin.com/in/janplojhar/",
-          photo: "/playhard.jpg"
-        }, {
-          name: "Jana Daniela Šabatková",
-          linkedin: "https://www.linkedin.com/in/janadaniela/",
-          photo: "/jd.jpeg"
-        }
-      ]
-
-
-    }
+const presidents = [
+  {
+    name: "Leonid Kushnir",
+    linkedin: "https://www.linkedin.com/in/leonidkushnir/",
+    photo: "leon.jpg",
+    position: "Národní prezident"
+  },
+  {
+    name: "Frantisek Hanf",
+    linkedin: "https://www.linkedin.com/in/frantisekhanf/",
+    photo: "frantisek_hanf.jpg",
+    position: "Lokální prezident, Prague"
+  },
+  {
+    name: "Štěpán Kapko",
+    linkedin: "https://www.linkedin.com/in/stepankapko/",
+    photo: "stepan.jpg",
+    position: "Lokální prezident, Plzeň"
+  },
+  {
+    name: "Luboš Petráň",
+    linkedin: "https://www.linkedin.com/in/lubo%C5%A1-petr%C3%A1%C5%88-526b6327a/",
+    photo: "lubos.jpg",
+    position: "Lokální prezident, České Budějovice"
   }
-}
+]
+
+const senators = [
+  {
+    name: "Václav Ševčík",
+    linkedin: "https://www.linkedin.com/in/vaclavsevcik/",
+    photo: "/vasek.jpg"
+  },
+  {
+    name: "Jana Havlíčková",
+    linkedin: "https://www.linkedin.com/in/janahavlickova/",
+    photo: "/jana.jpeg"
+  },
+  {
+    name: "Jiří Mauritz",
+    linkedin: "https://www.linkedin.com/in/jirimauritz/",
+    photo: "/jiri.jpg"
+  },
+  {
+    name: "Miroslav Rys",
+    linkedin: "https://www.linkedin.com/in/rysmiroslav/",
+    photo: "/mirek.jpg"
+  },
+  {
+    name: "Vojtěch Kačírek",
+    linkedin: "https://www.linkedin.com/in/vojtech-kacirek-2b07983/",
+    photo: "/vojtech.jpg"
+  },
+  {
+    name: "Leoš Kubíček",
+    linkedin: "https://www.linkedin.com/in/leos-kubicek-80167430/",
+    photo: "/leos.jpg"
+  },
+  {
+    name: "Blanka Bendlová",
+    linkedin: "https://www.linkedin.com/in/blankabendlova/",
+    photo: "/blanka.jpg"
+  },
+  {
+    name: "Jan Plojhar",
+    linkedin: "https://www.linkedin.com/in/janplojhar/",
+    photo: "/playhard.jpg"
+  },
+  {
+    name: "Jana Daniela Šabatková",
+    linkedin: "https://www.linkedin.com/in/janadaniela/",
+    photo: "/jd.jpeg"
+  }
+]
 </script>

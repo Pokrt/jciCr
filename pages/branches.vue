@@ -134,48 +134,39 @@ useSeoMeta({
   twitterTitle: 'Pobočky JCI Czech Republic',
   twitterDescription: 'Pobočky JCI v České republice - Praha, Plzeň, České Budějovice.',
 })
-</script>
 
-<script>
-export default {
-  data() {
-    return {
-      branches: [
-        {
-          "name": "JCI Czech Republic",
-          "address": "Václavské náměstí 795/40, Praha 1, 110 00",
-          "ICO": "22885498",
-          "DIC": "nejsme plátci DPH",
-          "email": "info@jcicr.cz",
-          "bank_account": "2700242309 / 2010"
-        },
-        {
-          "name": "JCI South Bohemia",
-          "address": "Husova tř. 1846/9, České Budějovice, 371 01",
-          "ICO": "22841601",
-          "DIC": "nejsme plátci DPH",
-          "email": "budejovice@jcicr.cz",
-          "bank_account": "2300599907 / 2010"
-        },
-        {
-          "name": "JCI Pilsen",
-          "address": "Šafaříkovy sady 2455/5, Plzeň, 301 00",
-          "ICO": "22710973",
-          "DIC": "nejsme plátci DPH",
-          "email": "pilsen@jcicr.cz",
-          "bank_account": "2700355952 / 2010"
-        },
-        {
-          "name": "JCI Prague",
-          "address": "Štěpánská 617/26, Praha 1, 110 00",
-          "ICO": "02506955",
-          "DIC": "nejsme plátci DPH",
-          "email": "prague@jcicr.cz",
-          "bank_account": "2100549518 / 2010"
-        }
-      ]
-
-    }
+const branches = [
+  {
+    name: "JCI Czech Republic",
+    address: "Václavské náměstí 795/40, Praha 1, 110 00",
+    ICO: "22885498",
+    DIC: "nejsme plátci DPH",
+    email: "info@jcicr.cz",
+    bank_account: "2700242309 / 2010"
   },
-}
+  {
+    name: "JCI South Bohemia",
+    address: "Husova tř. 1846/9, České Budějovice, 371 01",
+    ICO: "22841601",
+    DIC: "nejsme plátci DPH",
+    email: "budejovice@jcicr.cz",
+    bank_account: "2300599907 / 2010"
+  },
+  {
+    name: "JCI Pilsen",
+    address: "Šafaříkovy sady 2455/5, Plzeň, 301 00",
+    ICO: "22710973",
+    DIC: "nejsme plátci DPH",
+    email: "pilsen@jcicr.cz",
+    bank_account: "2700355952 / 2010"
+  },
+  {
+    name: "JCI Prague",
+    address: "Štěpánská 617/26, Praha 1, 110 00",
+    ICO: "02506955",
+    DIC: "nejsme plátci DPH",
+    email: "prague@jcicr.cz",
+    bank_account: "2100549518 / 2010"
+  }
+]
 </script>
