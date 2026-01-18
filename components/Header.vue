@@ -2,13 +2,13 @@
   <header
       class="w-full bg-base-100 py-4 border-b border-gray-200  grid place-items-center">
     <div class="container px-4 md:px-6 flex items-center justify-between">
-      <a class="flex items-center gap-2 font-semibold " href="">
+      <NuxtLink class="flex items-center gap-2 font-semibold" to="/">
         <img
             src="/JCI - Czech Republic - WHITE.svg"
             class="h-12 w-12"
             alt="JCI Czech Republic Logo"/>
-        <span class="text-white text-base ">JCI Czech Republic</span>
-      </a>
+        <span class="text-white text-base">JCI Czech Republic</span>
+      </NuxtLink>
       <nav class="hidden md:flex items-center gap-6 text-base font-medium">
         <NuxtLink class="text-white hover:text-neutral  " to="/">
           Domů
