@@ -123,6 +123,19 @@
 
 </template>
 
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Pobočky JCI Czech Republic - Praha, Plzeň, České Budějovice',
+  description: 'Pobočky JCI Czech Republic - kontakty na JCI Prague, JCI Pilsen, JCI South Bohemia. Založte si vlastní pobočku ve vašem městě.',
+  ogTitle: 'Pobočky JCI Czech Republic',
+  ogDescription: 'Kde nás najdete? JCI Prague, JCI Pilsen, JCI South Bohemia - kontakty a informace.',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'Pobočky JCI Czech Republic',
+  twitterDescription: 'Pobočky JCI v České republice - Praha, Plzeň, České Budějovice.',
+})
+</script>
+
 <script>
 export default {
   data() {

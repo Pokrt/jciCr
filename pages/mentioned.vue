@@ -44,6 +44,19 @@
   </main>
 </template>
 
+<script setup lang="ts">
+useSeoMeta({
+  title: 'JCI Czech Republic v médiích - Články a zmínky',
+  description: 'JCI Czech Republic v médiích - přečtěte si články o našich členech, projektech a akcích v českém tisku.',
+  ogTitle: 'JCI Czech Republic v médiích',
+  ogDescription: 'Články a zmínky o JCI Czech Republic, našich členech a projektech.',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'JCI Czech Republic v médiích',
+  twitterDescription: 'Články a zmínky o JCI Czech Republic v českém tisku.',
+})
+</script>
+
 <script>
 export default {
   data() {

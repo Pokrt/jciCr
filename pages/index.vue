@@ -161,4 +161,17 @@
 </template>
 <script setup lang="ts">
 import Footer from "~/components/Footer.vue";
+
+useSeoMeta({
+  title: 'JCI Czech Republic - Developing Leaders for a Changing World',
+  description: 'Junior Chamber International Czech Republic - globální leadershipová organizace s více než 150 000 členy ve 120 zemích. Rozvíjíme mladé lídry a vytváříme pozitivní změny ve společnosti.',
+  ogTitle: 'JCI Czech Republic - Developing Leaders for a Changing World',
+  ogDescription: 'Globální leadershipová organizace rozvíjející mladé lídry. Připojte se k 150 000+ členům ve více než 120 zemích světa.',
+  ogImage: '/pavel.jpg',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'JCI Czech Republic - Developing Leaders for a Changing World',
+  twitterDescription: 'Globální leadershipová organizace rozvíjející mladé lídry ve více než 120 zemích světa.',
+  twitterImage: '/pavel.jpg',
+})
 </script>

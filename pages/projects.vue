@@ -101,4 +101,16 @@
   </section>
 </template>
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Projekty JCI Czech Republic - Business kotel, Vánoční krabice',
+  description: 'Projekty členů JCI mají dopad! Business kotel, Vánoční krabice pro děti ze sociálně slabších rodin, Setkání budoucích leaderů a další.',
+  ogTitle: 'Projekty JCI Czech Republic',
+  ogDescription: 'Business kotel, Vánoční krabice, Setkání budoucích leaderů - projekty s pozitivním dopadem na společnost.',
+  ogImage: '/pbk.jpg',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Projekty JCI Czech Republic',
+  twitterDescription: 'Projekty členů JCI mají dopad na komunitu a společnost.',
+  twitterImage: '/pbk.jpg',
+})
 </script>

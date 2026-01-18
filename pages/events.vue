@@ -62,10 +62,20 @@
 
   </main>
 </template>
-<script setup >
+<script setup lang="ts">
 const config = useRuntimeConfig()
 const { data: articles } = await useFetch(config.public.strapiApi +  '/strapi/events?pagination%5BwithCount%5D=false&populate=%2A')
 
+useSeoMeta({
+  title: 'Akce JCI Czech Republic - Leadership události a konference',
+  description: 'Akce JCI Czech Republic - leadership meetupy, konference a vzdělávací akce na lokální i globální úrovni. Rozvíjejte své dovednosti s námi.',
+  ogTitle: 'Akce JCI Czech Republic - Leadership události',
+  ogDescription: 'Leadership akce, konference a meetupy na lokální i globální úrovni. Dostaňte leadership pod kůži.',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'Akce JCI Czech Republic',
+  twitterDescription: 'Leadership události a konference JCI Czech Republic.',
+})
 </script>
 
 

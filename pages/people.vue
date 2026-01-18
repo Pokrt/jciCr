@@ -116,6 +116,19 @@
   </main>
 </template>
 
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Vedení JCI Czech Republic - Prezidenti a Senátoři',
+  description: 'Seznamte se s vedením JCI Czech Republic. Národní prezident, lokální prezidenti a senátoři - lídři, kteří stojí v čele naší organizace.',
+  ogTitle: 'Vedení JCI Czech Republic - Prezidenti a Senátoři',
+  ogDescription: 'Seznamte se s odhodlanými lidmi, kteří stojí v čele JCI Czech Republic.',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'Vedení JCI Czech Republic',
+  twitterDescription: 'Seznamte se s vedením JCI Czech Republic - národní prezident, lokální prezidenti a senátoři.',
+})
+</script>
+
 <script>
 export default {
   data() {

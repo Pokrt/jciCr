@@ -109,4 +109,14 @@
   </section>
 </template>
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Členství v JCI Czech Republic - Staň se členem',
+  description: 'Staň se členem JCI Czech Republic a získej přístup do komunity 150 000+ členů ve 120 zemích. Leadership masterclasses, networking a osobní rozvoj.',
+  ogTitle: 'Členství v JCI Czech Republic - Staň se členem',
+  ogDescription: 'Rozvíjej své leadershipové schopnosti jako člen celosvětové komunity s více než stoletou tradicí.',
+  ogType: 'website',
+  twitterCard: 'summary',
+  twitterTitle: 'Členství v JCI Czech Republic',
+  twitterDescription: 'Staň se členem prestižní globální leadershipové organizace.',
+})
 </script>
