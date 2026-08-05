@@ -1,8 +1,11 @@
 services:
   web:
     build: .
-    ports:
-      - "${WEB_PORT:-3000}:3000"
+    # Don't publish a host port — Coolify's Traefik proxy routes the domain to the
+    # container over the internal network. Publishing 0.0.0.0:3000 collides with
+    # other apps on the host that already bind it.
+    expose:
+      - "3000"
     environment:
       # Canonical URL used by @nuxtjs/seo (sitemap, OG tags). Override per environment.
       NUXT_PUBLIC_SITE_URL: ${NUXT_PUBLIC_SITE_URL:-https://jcicr.cz}
