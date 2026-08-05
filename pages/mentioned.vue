@@ -13,7 +13,7 @@
                  class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
           </div>
           <div class="flex flex-1 flex-col p-6">
-            <h3 class="text-balance font-bold leading-snug tracking-[-0.01em] text-jci-black">{{ article.name }}</h3>
+            <h2 class="text-balance font-bold leading-snug tracking-[-0.01em] text-jci-black">{{ article.name }}</h2>
             <p class="mt-3 flex-1 text-sm leading-relaxed text-base-content/70">{{ article.summary }}</p>
             <NuxtLink :to="article.link" target="_blank" rel="noopener noreferrer"
                       class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-jci-blue transition-colors hover:text-jci-navy">

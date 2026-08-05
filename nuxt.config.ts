@@ -11,12 +11,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  runtimeConfig: {
-      public: {
-          strapiApi: 'http://localhost:1337', // can be overridden by NUXT_PUBLIC_STRAPI_API environment variable
-      }
-  },
-
   app: {
       head: {
           htmlAttrs: {

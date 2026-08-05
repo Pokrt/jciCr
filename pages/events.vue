@@ -23,9 +23,9 @@
               </div>
             </div>
             <div class="flex flex-1 flex-col p-6">
-              <h3 class="text-balance font-bold leading-snug tracking-[-0.01em] text-jci-black">{{ event.name }}</h3>
+              <h2 class="text-balance font-bold leading-snug tracking-[-0.01em] text-jci-black">{{ event.name }}</h2>
               <p class="mt-3 flex-1 text-sm leading-relaxed text-base-content/70">{{ event.summary }}</p>
-              <NuxtLink v-if="event.link" :to="event.link" target="_blank"
+              <NuxtLink v-if="event.link" :to="event.link" target="_blank" rel="noopener noreferrer"
                         class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-jci-blue transition-colors hover:text-jci-navy">
                 Více informací
                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -62,37 +62,37 @@ const events = [
     name: "Kick off (leden)",
     link: null,
     summary: "Pravidelný víkendový leadershipový trénink zaměřený na plánování roku, seberozvoj a týmovou motivaci. Pro členy JCI, zejména pro lokální a národní radu.",
-    image: "/events/kick-off.jpg",
+    image: "/event-images/kick-off.jpg",
   },
   {
     name: "Strategická Valná hromada (duben)",
     link: null,
     summary: "Jednodenní workshop zaměřený na strategii v praxi, měkké dovednosti a leadershipové přístupy. Pro členy JCI na lokální, národní i mezinárodní úrovni.",
-    image: "/events/valna-hromada.jpg",
+    image: "/event-images/valna-hromada.jpg",
   },
   {
     name: "Czech academy (květen)",
     link: null,
     summary: "Tradiční outdoorová leadership akce zaměřená na sebereflexi a osobní růst. Určeno pro členy JCI i zájemce o leadership.",
-    image: "/events/czech-academy.jpg",
+    image: "/event-images/czech-academy.jpg",
   },
   {
     name: "JCI Regatta - Charitativní závod na plachetnicích",
     link: "https://www.jci-regatta.com/",
     summary: "Jachtingový závod pro členy, bývalé členy a jejich přátele. Akce má charitativní charakter.",
-    image: "/events/regatta.jpg",
+    image: "/event-images/regatta.jpg",
   },
   {
     name: "Evropská akademie JCI ve Švédsku",
     link: "https://jciea.jcisweden.se/",
     summary: "Exkluzivní leadershipová vzdělávací akce pro mladé leadery ve Švédsku.",
-    image: "/events/sweden.jpg",
+    image: "/event-images/sweden.jpg",
   },
   {
     name: "JCI Academy v Japonsku",
     link: "https://2025jciacademy.jc766.com/",
     summary: "Tradiční leadershipová akce s kulturně-diplomatickým přesahem pro národní leadery z více než 120 zemí světa.",
-    image: "/events/japan.jpg",
+    image: "/event-images/japan.jpg",
   },
 ]
 </script>
