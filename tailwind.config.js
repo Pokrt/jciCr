@@ -1,29 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-          "primary": "#EDBE38",
-          "secondary": "#3A67B1",
-          "accent": "#0097D7",
-          "neutral": "#56BDA3",
-          "base-100": "#0A0F29",
-          "info": "#73D2F2",
-          "success": "#0D6351",
-          "warning": "#EDC35A",
-          "error": "#E34F58",
-        },
-      },
+    content: [
+        "./index.html",
+        "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
-  },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+    theme: {
+        fontFamily: {
+            'sans': ['Plus Jakarta Sans', 'sans-serif'],
+            'display': ['Plus Jakarta Sans', 'sans-serif'],
+        },
+        extend: {
+            colors: {
+                'jci-blue': '#0097D7',
+                'jci-black': '#130F2D',
+                'jci-white': '#FFFFFF',
+                'jci-navy': '#1F4789',
+                'jci-teal': '#57BCBC',
+                'jci-yellow': '#EFC40F',
+            },
+        },
+    },
+    plugins: [require("@tailwindcss/typography")],
 }
 

@@ -13,7 +13,7 @@
           </li>
         </ul>
       </details>
-      <a href="#" class="btn btn-ghost"><img class="h-full px-0" src="/favicon.svg"></a>
+      <NuxtLink to="/" class="btn btn-ghost"><img class="h-full px-0" src="/favicon.svg" alt="JCI Czech Republic"></NuxtLink>
     </div>
 
     <div class="navbar-center hidden lg:flex ">
@@ -40,6 +40,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-
-</style>

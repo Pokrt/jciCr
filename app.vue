@@ -1,5 +1,12 @@
 <template>
-  <div>
-    <Content />
+  <div data-theme="jci" class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-1">
+      <NuxtPage />
+    </main>
+    <Footer />
   </div>
 </template>
+<script setup lang="ts">
+import Footer from "~/components/Footer.vue";
+</script>
