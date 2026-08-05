@@ -23,26 +23,50 @@
         </NuxtLink>
       </nav>
 
-      <div class="lg:hidden">
-        <details ref="mobileMenu" class="dropdown dropdown-end">
-          <summary tabindex="0" role="button" class="btn btn-ghost btn-sm text-base-content" aria-label="Menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
-              <line x1="4" x2="20" y1="6" y2="6"></line>
-              <line x1="4" x2="20" y1="12" y2="12"></line>
-              <line x1="4" x2="20" y1="18" y2="18"></line>
-            </svg>
-          </summary>
-          <ul class="menu dropdown-content menu-sm z-20 mt-3 w-60 gap-0.5 rounded-2xl border border-base-300 bg-base-100 p-2 shadow-xl">
-            <li v-for="l in links" :key="l.to">
-              <NuxtLink :to="l.to" class="rounded-lg font-medium" exact-active-class="text-jci-blue" @click="closeMenu">{{ l.label }}</NuxtLink>
-            </li>
-            <li class="mt-1">
-              <NuxtLink to="/membership" class="btn btn-primary rounded-lg text-white" @click="closeMenu">Členství</NuxtLink>
-            </li>
-          </ul>
-        </details>
-      </div>
+      <button
+          type="button"
+          class="btn btn-ghost btn-sm text-base-content lg:hidden"
+          :aria-expanded="open"
+          aria-controls="mobile-menu"
+          aria-label="Menu"
+          @click="open = !open">
+        <svg v-if="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+          <line x1="6" x2="18" y1="6" y2="18"></line>
+          <line x1="6" x2="18" y1="18" y2="6"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu (controlled, no reliance on native <details> toggle) -->
+    <div v-if="open" class="lg:hidden">
+      <button type="button" tabindex="-1" aria-hidden="true"
+              class="fixed inset-x-0 bottom-0 top-16 z-40 w-full cursor-default bg-jci-black/10"
+              @click="open = false"></button>
+      <nav id="mobile-menu"
+           class="absolute right-4 top-[calc(100%+0.5rem)] z-50 flex w-60 flex-col gap-0.5 rounded-2xl border border-base-300 bg-base-100 p-2 shadow-xl">
+        <NuxtLink
+            v-for="l in links"
+            :key="l.to"
+            :to="l.to"
+            class="rounded-lg px-3 py-2 text-sm font-medium text-base-content/80 transition-colors hover:bg-jci-blue/10 hover:text-jci-blue"
+            exact-active-class="!text-jci-blue bg-jci-blue/10"
+            @click="open = false">
+          {{ l.label }}
+        </NuxtLink>
+        <NuxtLink
+            to="/membership"
+            class="btn btn-primary btn-sm mt-1 rounded-lg border-0 text-sm font-semibold text-white"
+            @click="open = false">
+          Členství
+        </NuxtLink>
+      </nav>
     </div>
   </header>
 </template>
@@ -57,6 +81,8 @@ const links = [
   { label: 'Pobočky', to: '/branches' },
 ]
 
-const mobileMenu = ref<HTMLDetailsElement | null>(null)
-const closeMenu = () => mobileMenu.value?.removeAttribute('open')
+const open = ref(false)
+const route = useRoute()
+// Close the menu on any navigation.
+watch(() => route.fullPath, () => { open.value = false })
 </script>
