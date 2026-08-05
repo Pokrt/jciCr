@@ -1,47 +1,31 @@
 <template>
-  <main class="container mx-auto px-4 py-12 md:px-6 lg:py-16">
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 text-base-100 ">
-      <article v-for="article in articles" class="rounded-lg bg-primary shadow-md ">
-        <div class="relative h-60 overflow-hidden rounded-t-lg">
-          <img
-              :src="article.image"
-              width="340"
-              height="300"
-              class="h-full w-full object-cover object-center"
-              style="aspect-ratio: 340 / 300; object-fit: cover;"
-          />
-        </div>
-        <div class="p-4">
-          <h3 class="text-xl font-bold">{{ article.name }}</h3>
-          <p class="mt-2  ">
-            {{ article.summary }}
-          </p>
-          <NuxtLink
-              class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral mt-4 self-end "
-              :to="article.link"
-          >
-            Celý článek
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="ml-1 h-4 w-4"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </NuxtLink>
-        </div>
-      </article>
+  <PageHero
+      title="Napsali o nás"
+      lead="Přečtěte si články o JCI Czech Republic, našich členech a projektech v médiích." />
 
+  <section class="w-full bg-base-100 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article v-for="article in articles" :key="article.link"
+                 class="group flex flex-col overflow-hidden rounded-3xl border border-base-300 bg-base-100 shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-jci-navy/10">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img :src="article.image" :alt="article.name" width="340" height="213" loading="lazy"
+                 class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="text-balance font-bold leading-snug tracking-[-0.01em] text-jci-black">{{ article.name }}</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-base-content/70">{{ article.summary }}</p>
+            <NuxtLink :to="article.link" target="_blank" rel="noopener noreferrer"
+                      class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-jci-blue transition-colors hover:text-jci-navy">
+              Celý článek
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                   stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </NuxtLink>
+          </div>
+        </article>
+      </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <script setup lang="ts">

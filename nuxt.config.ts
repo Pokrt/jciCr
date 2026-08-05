@@ -1,9 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   devtools: {enabled: true},
-  modules: ["@nuxtjs/tailwindcss", '@nuxtjs/seo'],
+  modules: ['@nuxtjs/seo'],
   css: ['/app.css'],
   ssr: true,
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   runtimeConfig: {
       public: {
@@ -17,7 +23,10 @@ export default defineNuxtConfig({
               lang: 'cs'
           },
           link: [
-              { rel: 'icon', type: 'image/svg+xml', href: '/JCI - Czech Republic.svg' }
+              { rel: 'icon', type: 'image/svg+xml', href: '/JCI - Czech Republic.svg' },
+              { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+              { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+              { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap' }
           ]
       }
   },

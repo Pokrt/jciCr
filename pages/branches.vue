@@ -1,126 +1,59 @@
 <template>
-  <section class="w-full py-12 md:py-24 lg:py-32 grid place-items-center bg-primary text-base-100">
-    <div class="container grid gap-4 px-4 md:px-6">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Naše pobočky</h2>
-        <p class="">
-          Kde nás aktuálně najdete? Neváhejte se s námi spojit.
-        </p>
-      </div>
+  <PageHero
+      title="Naše pobočky"
+      lead="Kde nás aktuálně najdete? Neváhejte se s námi spojit — rádi vás přivítáme." />
+
+  <section class="w-full bg-base-100 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 md:px-6">
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        <div v-for="branch in branches" class="rounded-lg  border-base-100 border  p-6 shadow-sm ">
-          <h3 class="text-xl font-semibold">{{ branch.name }}</h3>
-          <div class="mt-4 flex items-center space-x-2">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 "
-            >
-              <line x1="2" x2="5" y1="12" y2="12"></line>
-              <line x1="19" x2="22" y1="12" y2="12"></line>
-              <line x1="12" x2="12" y1="2" y2="5"></line>
-              <line x1="12" x2="12" y1="19" y2="22"></line>
-              <circle cx="12" cy="12" r="7"></circle>
-            </svg>
-            <span class="text-sm ">{{ branch.address }}</span>
-          </div>
-          <div class="mt-2 flex items-center space-x-2">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 "
-            >
-            </svg>
-            <span class="text-sm ">IČO: {{ branch.ICO }}</span>
-          </div>
-          <div class="mt-2 flex items-center space-x-2">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 "
-            >
-
-            </svg>
-            <span class="text-sm ">DIČ: {{ branch.DIC }}</span>
-          </div>
-          <div class="mt-2 flex items-center space-x-2">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 "
-            >
-
-            </svg>
-            <span class="text-sm ">Email: <a class="link" :href="'mailto:' + branch.email">{{ branch.email }}</a></span>
-          </div>
-          <div class="mt-2 flex items-center space-x-2">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 "
-            >
-
-            </svg>
-            <span class="text-sm ">Bankovní účet: {{ branch.bank_account }}</span>
-          </div>
+        <div v-for="branch in branches" :key="branch.ICO"
+             class="rounded-3xl border border-base-300 bg-base-100 p-6 shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-jci-navy/10">
+          <h3 class="text-lg font-bold tracking-tight text-jci-black">{{ branch.name }}</h3>
+          <dl class="mt-4 space-y-3 text-sm text-base-content/75">
+            <div class="flex gap-2.5">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-jci-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>{{ branch.address }}</span>
+            </div>
+            <div class="flex gap-2.5">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-jci-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/></svg>
+              <span>IČO: {{ branch.ICO }}</span>
+            </div>
+            <div class="flex gap-2.5">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-jci-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+              <span>DIČ: {{ branch.DIC }}</span>
+            </div>
+            <div class="flex gap-2.5">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-jci-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+              <a class="break-all font-medium text-jci-blue hover:text-jci-navy" :href="'mailto:' + branch.email">{{ branch.email }}</a>
+            </div>
+            <div class="flex gap-2.5">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-jci-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 10h16M12 3 4 7h16zM6 10v8M10 10v8M14 10v8M18 10v8"/></svg>
+              <span class="tabular-nums">{{ branch.bank_account }}</span>
+            </div>
+          </dl>
         </div>
       </div>
     </div>
   </section>
-  <section class="w-full py-12 md:py-24 lg:py-32 bg-neutral text-base-100  grid place-items-center">
-    <div class="container grid gap-8 px-4 md:px-6">
-      <div class="space-y-4">
-        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">Založte si vlastní pobočku</h2>
-        <p class="">
-          Pokud chcete založit pobočku ve vašem městě, kontaktujte Národního Prezidenta JCI Czech Republic. Rádi vám
-          pomůžeme s procesem založení a podporou vaší místní pobočky.
-        </p>
-      </div>
-      <div class="flex justify-center">
-        <a
-            class="btn text-base-100 bg-white h-10 px-8 hover:btn-neutral" href="mailto:info@jcicr.cz"
-        >
-          Kontaktujte Národního Prezidenta
-        </a>
+
+  <section class="relative isolate overflow-hidden bg-secondary py-16 text-white md:py-24">
+    <div class="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-40" aria-hidden="true">
+      <div class="absolute -right-[14%] top-1/2 aspect-square w-[min(58vw,520px)] -translate-y-1/2">
+        <Ripple :palette="rippleNavy" :rings="6" spin="reverse" />
       </div>
     </div>
+    <div class="relative z-[1] mx-auto max-w-3xl px-4 text-center md:px-6">
+      <h2 class="text-balance font-extrabold tracking-[-0.03em] text-[clamp(1.8rem,3.6vw,2.8rem)]">Založte si vlastní pobočku</h2>
+      <p class="mx-auto mt-5 max-w-[60ch] leading-relaxed text-white/85">
+        Pokud chcete založit pobočku ve vašem městě, kontaktujte národního prezidenta JCI Czech Republic. Rádi vám
+        pomůžeme se založením i rozjezdem vaší místní pobočky.
+      </p>
+      <a href="mailto:info@jcicr.cz"
+         class="btn mt-8 h-12 rounded-full border-0 bg-jci-yellow px-7 text-base font-semibold text-jci-black hover:brightness-105">
+        Kontaktujte národního prezidenta
+      </a>
+    </div>
   </section>
-
 </template>
 
 <script setup lang="ts">
@@ -134,6 +67,8 @@ useSeoMeta({
   twitterTitle: 'Pobočky JCI Czech Republic',
   twitterDescription: 'Pobočky JCI v České republice - Praha, Plzeň, České Budějovice.',
 })
+
+const rippleNavy = ['#57BCBC', '#5b8fd0', '#8fb8e6', '#3f74c0', '#a9dcdc', '#cfe0f4']
 
 const branches = [
   {
